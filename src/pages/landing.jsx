@@ -26,7 +26,7 @@ const LandingPage = () => {
         <Input type="url" value = {longURL} placeholder="Enter the long URL here" onChange = {(e) => setLongURL(e.target.value)} className="h-full flex-1 py-4 px-4" />
         <Button className="h-full" type="submit" variant="destructive">Shorten</Button>
       </form>
-      <img src='/banner2.jpeg' alt='SnapURL Banner' className='w-full my-11 md:px-11'/>
+      <img src='/banner.jpeg' alt='SnapURL Banner' className='w-full my-11 md:px-11'/>
       <Accordion type="multiple" collapsible className="w-full md:px-11">
         <AccordionItem value="item-1">
           <AccordionTrigger>

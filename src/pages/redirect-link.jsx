@@ -6,11 +6,11 @@ import { useParams } from "react-router-dom";
 import { BarLoader } from "react-spinners";
 
 const RedirectLink = () => {
-  const {id} = useParams();
+  const { id } = useParams();
 
-  const {loading, data, fn} = useFetch(getLongUrl, id);
+  const { loading, data, fn } = useFetch(getLongUrl, id);
 
-  const {loading: loadingStats, fn: fnStats} = useFetch(storeClicks, {
+  const { loading: loadingStats, fn: fnStats } = useFetch(storeClicks, {
     id: data?.id,
     originalUrl: data?.original_url,
   });
